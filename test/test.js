@@ -1,31 +1,25 @@
-
 var assert = require('assert');
-var assert = require('chai').assert 
-var fs = require('fs');
+var greet = require('../people');
+var spawn = require('child_process').spawn;
 
-describe(' a suite of tests that do x', function(){
+describe(' a simple test ', function(){
 
-	it('should add some numbers', function(){
-	var sum = 2 +2 ;
-	if (sum!==4){
-		throw new Error(' sum is not correct' )
-		}		
+	it('should console log a name', function(done){
+	 
+		var command = spawn('node', ['index.js', 'bobxxx']);
+		command.stdout.on('data', function(data){
 
-//async
-	it('should write a file', function(done){
-
-		fs.writeFile('my-test.text', '123', function(err){
-
-			assert(!err);
+			assert(/Hello bob/.test(data.toString() ) );
 			done();
-
 		});
 
-	});
+   	});
 
+	it('should equal this value', function(){
+		var testname = "something";
 
+		assert.equal(greet(testname), "Hello something");
 
-
-	});
-
+	})
+ 
 });

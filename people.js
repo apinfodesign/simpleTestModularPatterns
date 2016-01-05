@@ -1,3 +1,5 @@
-var people=['Bob', 'Joe', 'Sally'];
+var greet = function(name){
+	return ("Hello " + name);
+};
 
-module.exports = people;
+module.exports = greet;
