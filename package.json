@@ -1,14 +1,13 @@
 {
   "name": "miles",
   "version": "1.0.0",
-  "description": "test exercise",
+  "description": "4-Jan-SimpleTestModularPatterns",
   "main": "index.js",
   "directories": {
     "test": "test"
   },
   "dependencies": {
-    "cool-ascii-faces": "^1.3.3",
-    "nodemon": "^1.8.1"
+     "nodemon": "^1.8.1"
   },
   "devDependencies": {},
   "scripts": {

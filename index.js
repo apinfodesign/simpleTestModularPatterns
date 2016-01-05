@@ -1,4 +1,4 @@
-var greet = require('./people');
+var greet = require('./greeting');
 
-//accept third argument of command line
+//accept third argument from command line
 console.log(greet(process.argv[2]))
