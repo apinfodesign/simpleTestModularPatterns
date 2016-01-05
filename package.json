@@ -1,0 +1,26 @@
+{
+  "name": "miles",
+  "version": "1.0.0",
+  "description": "4-Jan-SimpleTestModularPatterns",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+     "nodemon": "^1.8.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:apinfodesign/simpleTestModularPatterns.git"
+  },
+  "author": "miles",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/apinfodesign/simpleTestModularPatterns/issues"
+  },
+  "homepage": "https://github.com/apinfodesign/simpleTestModularPatterns"
+}
